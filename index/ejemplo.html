@@ -1,0 +1,132 @@
+<!--La etiqueta form nos crea un formulario. El atributo "action" lo usamos para programacion y
+    El metodo "post sirve para poner la informacion en algun sitio para almacenarlo y el metodo get
+    es para obtener la informacion." -->
+<!-- Los input son cuadros de texto donde el usuario puede escribir. Y el id es para almacenar a ese input -->
+<!-- El label es para darle un un nombre al cuadro de texto y el usuario sepa para que es -->
+<!-- El for en el label y el id es para relacionar los dos. -->
+<!-- El input submit es para enviar informacion, guardar o hacer alguna funcion -->
+<!-- El input reset es para borrar la informacion -->
+<!-- La etiqueta button es para crear botones pero desde js se les tiene que dar las funcionalidades -->
+<!-- La diferencia entre en value y el placeholder es que el value es un valor ya puesto en la pag, mientras
+    que el value es un valor puesto predeterminadamente-->
+<!-- La propiedad required es para hacerle saber al usuario es es obligatorio llenarlos -->
+<!-- La propiedad readonly es para que el usuario no lo pueda modificar -->
+<!-- Los ID Son para crear identificadores Unicos. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulario.css">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <h2>Contactenos</h2>
+        <form>
+            <h3>Titulo del formulario</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos voluptatibus labore voluptas cupiditate porro amet rem neque, odio sequi vel similique, dignissimos possimus pariatur architecto magni, quas veritatis molestias dolores.</p>
+
+            <label for="nombreUsuario">Nombre:</label> 
+            <input type="text" id="nombreUsuario" placeholder="Digite su nombre"><br><br>
+
+            <label for="apellidoUsuario">Apellido:</label> 
+            <input type="text" id="apellidoUsuario"><br><br>
+
+            <input type="submit" value="Guardar">
+
+            <input type="reset" value="Borrar"><br><br>
+
+            <label for="edadUsuario">Edad:</label> 
+            <input type="number" id="edadUsuario"><br><br>
+
+            <label for="emailUsuario">Email:</label> 
+            <input type="email" id="emailUsuario"><br><br>
+
+            <label for="contraseñaUsuario>">Contraseña:</label>
+            <input type="password" id="contraseñaUsuario" required><br><br>
+
+            <label for="telefonoUsuario>">Numero Telefonico:</label>
+            <input type="tel" id="telefonoUsuario"><br><br>
+
+            <laber for="fechaNacimientoUsuario">Fecha Nacimiiento:</laber>
+            <input type ="date" if="fechaNacimientoUsuario"><br><br>
+
+            <label for="nacionalidadUsuario>">Nacionalidad</label>:</label>
+            <input type="text" id="nacionalidadUsuario" value="Colombiano" readonly><br><br>
+
+            <!-- INPUT DE AGRUPACIONES -->
+            <!-- El radio es cuando solo se puede seleccionar 1 opcion -->
+            
+            <label>Medio de Comunicacion Favorito</label>
+            <div>
+                <input type="radio" name="conect" id="internet">
+                <label for="internet">Internet</label><br><br>
+
+                <input type="radio" name="conect" id="whatssap">
+                <label for="whatssap">Whatssap</label><br><br>
+
+                <input type="radio" name="conect" id="llamada">
+                <label for="llamada">Llamada</label>
+            </div>
+
+            <!-- el checkbox cuando se puede varias opciones -->
+
+            <label>Medio de Comunicacion Favorito</label>
+            <div>
+                <input type="checkbox" name="mascota" id="perro">
+                <label for="internet">Perro</label><br><br>
+
+                <input type="checkbox" name="mascota" id="gato">
+                <label for="whatssap">Gato</label><br><br>
+
+                <input type="checkbox" name="mascota" id="pez">
+                <label for="llamada">Pez</label><br><br>
+            </div>
+
+            <div>
+                    <!-- El select es para crear una lista, se crea una opcion en este caso, por cada ciudad. y el value es
+                    el valor que va a llegar a la base de datos -->
+                    <!-- Para que haya una opcion por defecto se hace con la propieda "selected" -->
+                    <select name="ciudad">
+                        <option value="armenia">Armenia</option>
+                        <option value="manizales" selected>Manizales</option>
+                        <option value="pereira">Pereira</option>
+                    </select>
+            </div>
+            <br><br>
+            <div>
+                <select>
+                    <optgroup label="Quindio">
+                        <option value="armenia">Armenia</option>
+                        <option value="circasia" selected>Circasia</option>
+                        <option value="calarca">Calarca</option>
+                    </optgroup>
+                    <optgroup label="Risaralda">
+                        <option value="DosQuebradas">Armenia</option>
+                        <option value="Pereira" selected>Circasia</option>
+                        <option value="LaVirginia">Calarca</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <!-- Sirve para crear otra lista que se vea de forma diferente y se pueda excribir. -->
+            <input list="browsers" name="browser">
+            <datalist id="browsers">
+                <option value="Opera">
+                <option value="Crhoome">
+                <option value="FireFoz">
+                <option value="InternetExploret"></option><br><br><br>
+            </datalist>
+
+            <br><br><br>
+                                    <!-- Es para crear un cuadro de texto -->
+        </form>
+        <label for="mesagge">Mensaje</label>
+        <textarea id="mesagge" cols="50" rows="5">
+            Escribir aqui
+        </textarea>
+    </section>
+</body>
+</html>

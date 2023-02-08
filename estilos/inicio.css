@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color:#24282b;
+    padding: 35px 200px;
+}
+
+span{
+    color: #1293d4;
+}
+
+h1{
+    color: white;
+}
+
+ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.inicio{
+    color: #1293d4;
+}
+
+h1{
+    float: left ;
+}
+
+ul{
+    float: right;
+    list-style: none;
+}
+
+ul li{
+    float: left;
+    margin: 10px 20px;
+}
+
+hr{
+    height: 6px;
+    background-color: #1293d4 
+}
+
+.primero{
+    background-image: url(/images/cabecera.jpg);
+    text-align: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    padding: 260px 200px;
+    color: white;
+}
+
+.primero h2{
+    font-size: 100px;
+}
+
+.primero p{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.medio{
+    background-color:#24282b;
+    padding: 35px 200px;
+}
+
+.h2Medio{
+    float: left;
+    color: white;
+}
+
+.formulario{
+    float: right;
+    resize:both;
+}
+
+input{
+    font-size: 13px;
+    width: 250px;
+    height: 30px;
+}
+
+label{
+    /* border: red 1px solid; */
+    background-color: #e8491d;
+    padding: 9px;
+    color: white;
+}
+
+.Izquierda{
+    float: left;
+    text-align: center;
+    margin: 50px 120px;
+}
+
+.Medio{
+    float: left;
+    text-align: center;
+    margin: 50px 85px;
+}
+
+.Derecha{
+    float: left;
+    text-align: center;
+    margin: 50px 85px;
+}
+
+footer{
+    text-align: center;
+    background-position-y: center ;
+    color: white;
+    background: #1293d4;
+    padding: 30px 0px;
+    
+}
+.clear{
+    clear: both;
+}
+
+
